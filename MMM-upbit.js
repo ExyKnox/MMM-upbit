@@ -87,7 +87,7 @@ Module.register("MMM-upbit", {
 		}
 		
 		container.append(tbody_coins);
-		container.style.transform = 'translateX(50%)';
+		container.style.transform = 'translateX(100%)';
 		return container;
 	},
 	
