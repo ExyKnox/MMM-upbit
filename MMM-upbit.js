@@ -1,5 +1,8 @@
 Module.register("MMM-upbit", {
-	defaults: {},
+	defaults: {
+		"KRW-BTC": null,
+		"KRW-ETH": null
+	},
 	
 	start: function () {
 		Log.log("Starting module: " + this.name);
@@ -122,7 +125,7 @@ Module.register("MMM-upbit", {
 					var target_benefit_elem = document.getElementById(targetSymbol + "_benefit");
 					var total_purchase_elem = document.getElementById(targetSymbol + '_totalPurchase');
 					// 현재가 - 매수가 * 수량
-					var benefit = (payload['trade_price'] - this.config.codes[targetSymbol]['buy_In']) * this.config.codes[targetSymbol]['amount'].toFixed(0);
+					var benefit = (payload['trade_price'] - this.config.codes[targetSymbol]['buy_In']) * this.config.codes[targetSymbol]['amount'];
 					// 총매수
 					var total_Purchase = this.config.codes[targetSymbol]['amount'] * this.config.codes[targetSymbol]['buy_In'];
 					total_purchase_elem.innerHTML = `${total_Purchase.toFixed(0)}<label>${targetSymbolCurrency}</label>`;
