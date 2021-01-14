@@ -87,6 +87,7 @@ Module.register("MMM-upbit", {
 		}
 		
 		container.append(tbody_coins);
+		container.style.transform = 'translateX(50%)';
 		return container;
 	},
 	
@@ -133,7 +134,7 @@ Module.register("MMM-upbit", {
 					var benefit_percent = (benefit / total_Purchase) * 100;
 					var total_price = total_Purchase + benefit;
 					this.setColorByFluctuation(target_benefit_elem, benefit_percent);
-					target_benefit_elem.innerHTML = `${benefit}<label>${targetSymbolCurrency}</label>(${benefit_percent.toFixed(2)}%)<br><label>${total_price.toFixed(0)} ${targetSymbolCurrency}</label>`;
+					target_benefit_elem.innerHTML = `${benefit.toFixed()}<label>${targetSymbolCurrency}</label>(${benefit_percent.toFixed(2)}%)<br><label>${total_price.toFixed(0)} ${targetSymbolCurrency}</label>`;
 				}
 				this.updateDom();
 				break;
