@@ -1,0 +1,33 @@
+.upbit_container {
+/* 	height: 100%; */
+	/* width: 45em; */
+/* 	margin-left: 60em; */
+	color: white;
+	text-align: left;
+	margin-top: 3em;
+	font-size: 0.6em;
+	display: table-cell;
+	position: relative;
+	/* left: 50%;
+	transform: translate(-50%); */
+	transform: translate(100%);
+}
+
+.codeTdElement {
+	text-align: left;
+	/* 위 | 오른쪽 | 아래 | 왼쪽 */
+	/* margin: 0px 0.5em 0px 0.5em; */
+	/* padding: 0px 0.5em 0px 0.5em; */
+	padding-left: 0.5em;
+}
+
+#tbody_coins {
+	vertical-align: baseline;
+	line-height: 1em;
+}
+
+label {
+	font-size: 0.6em;
+/* 	color: white; */
+	line-height: 0px;
+}
